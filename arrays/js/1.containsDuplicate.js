@@ -1,4 +1,5 @@
-var containsDuplicate = (nums, numsSet = new Set()) => {
+var containsDuplicate = (nums) => {
+  let numsSet = new Set()
   for (const num of nums) {
     if (numsSet.has(num)) return true;
 
